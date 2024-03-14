@@ -1,0 +1,91 @@
+
+*{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.contact{
+
+    
+    background-color: #292e33;
+    min-height: 100%;
+}
+.container_contact{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+}
+.introducion_text{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #a4a8ade8;
+  }
+  .title_contact{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #12f7ff;
+  }
+
+  .form{
+    width: 70%;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    height: auto;
+
+  }
+ input {
+  border-radius: 7px;
+  background-color: #250821 !important;
+  color: white;
+ }
+
+ textarea{
+  
+  border-radius: 7px;
+  background-color: #250821 !important;
+  color: white;
+ }
+
+ .buton_send{
+  background: #12f7ff;
+  color: #250821;
+  box-shadow: 0 0 10px rgba(18,247,255,0.3),
+  0 0 20px rgba(18,247,255,0.3),
+  0 0 30px rgba(18,247,255,0.3),
+  0 0 40px rgba(18,247,255,0.3),
+  0 0 70px rgba(18,247,255,0.3),
+  0 0 80px rgba(18,247,255,0.3),
+  0 0 100px rgba(18,247,255,0.3),
+  0 0 150px rgba(18,247,255,0.3); ;
+  border: #12f7ff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 25%;
+  min-height: 4rem;
+  
+ }
+ 
+@media only screen and (max-width: 1000px)  {
+  .buton_send{
+width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 650px)  {
+  .buton_send{
+width: 100%;
+    }
+}
+
+input::placeholder{
+  padding-left: 1rem;
+}
+
+textarea::placeholder{
+  padding-left: 1rem;
+  padding-top: 1rem;
+}

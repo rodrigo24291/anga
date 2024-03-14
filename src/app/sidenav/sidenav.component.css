@@ -1,0 +1,205 @@
+nav {
+    position: fixed;
+    background: rgba(0,0,0,.1) !important;
+    backdrop-filter: blur(50px);
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+    display: flex;
+}
+
+.mobil{
+    display: none;
+}
+
+
+.navlist{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+.logo{
+    color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    background: linear-gradient(to left,red,yellow);
+    background-clip: text;
+    width: 25%;
+    letter-spacing: 0.8rem;
+}
+
+@media only screen and (max-width: 1292px)  {
+    .nav-xl{
+        display: none;
+    }
+
+    .mobil{
+        padding: 0.4rem 0rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .logo{
+        width: auto;
+    }
+  }
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #12f7ff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+   
+    
+}
+
+.btn:hover {
+    color: #19033e;
+    background: #12f7ff !important;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2196f3,   /* Sombras exteriores con un desenfoque de 10px */
+                0 0 40px #2196f3,   /* Sombras exteriores con un desenfoque de 40px */
+                0 0 80px #2196f3;   /* Sombras exteriores con un desenfoque de 80px */
+    transition-delay: 1s;
+}
+.btn-contact{
+    
+    color: #19033e;
+    background: #12f7ff !important;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2196f3,   /* Sombras exteriores con un desenfoque de 10px */
+                0 0 40px #2196f3,   /* Sombras exteriores con un desenfoque de 40px */
+                0 0 80px #2196f3;   /* Sombras exteriores con un desenfoque de 80px */
+    transition-delay: 1s;
+}
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.btn:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.btn:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.btn:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.btn:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.btn-box{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100% ;
+    height: 3rem;
+
+}
+
+.btn-box .bt{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.btn-box .bt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--bg-color);
+    width: 0;
+    height: 0%;
+    z-index: -1;
+    transition: .8s;
+}
+.btn-box .bt:hover{
+    color: var(--hover-color);
+}
+
+ .bt:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.menu-icon{
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    
+} 
+
+.navlist-mobil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
