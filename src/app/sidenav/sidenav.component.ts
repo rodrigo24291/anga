@@ -27,14 +27,14 @@ showMenu(){
     this.SidenavService.Toogle=true;
     menuElement.classList.add('block');
     mobil.classList.remove('h-14');
-    mobil.classList.add('h-2/5');
+    mobil.classList.add('h-2/3');
   }
 
   if (menuElement && !this.togle)  {
     this.SidenavService.Toogle=true;
     menuElement.classList.add('hidden');
     menuElement.classList.remove('block');
-    mobil.classList.remove('h-2/5');
+    mobil.classList.remove('h-2/3');
     mobil.classList.add('h-14')
   }
 

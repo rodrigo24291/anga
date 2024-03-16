@@ -4,7 +4,7 @@ nav {
     backdrop-filter: blur(50px);
     top: 0;
     left: 0;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     width: 100%;
     z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
     display: flex;
