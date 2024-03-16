@@ -87,26 +87,12 @@ animation: move_vector 6s ease-in-out infinite;
     }
 }
 
-@media only screen and (max-width: 850px)  {
-    .container_about{
-        flex-direction: column;
-    }
-
-    .about_image{
-        width: 100%;
-    }
-    .about_text{
-        margin-top: 2rem;
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-}
 
 .bt{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin-top: 2rem;
     height: 5rem;
     background: #12f7ff;
@@ -128,6 +114,33 @@ animation: move_vector 6s ease-in-out infinite;
     z-index: 1;
 
 }
+
+
+@media only screen and (max-width: 1223px)  {
+    .bt{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 850px)  {
+    .container_about{
+        flex-direction: column;
+    }
+
+    .about_image{
+        width: 100%;
+    }
+    .about_text{
+        margin-top: 2rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .bt{
+        width: 100%;
+    }
+}
+
 
  .bt::before{
     content: "";
