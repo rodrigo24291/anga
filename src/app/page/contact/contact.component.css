@@ -17,6 +17,7 @@
     margin: auto;
     padding-top: 4rem;
 }
+
 .introducion_text{
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -35,6 +36,15 @@
     height: auto;
 
   }
+
+  
+
+@media only screen and (max-width: 650px)  {
+  .form{
+    width: 100%;
+  }
+}
+
  input {
   border-radius: 7px;
   background-color: #250821 !important;
