@@ -1,171 +1,234 @@
 <div class="portfolio">
     <div class="text">
-        <span class="introducion_text animate__animated animate__fadeInDown">Askme Question</span>
-        <h2 class="title_contact animate__animated animate__fadeInLeft">Contacteme</h2>
+        <span class="introducion_text animate__animated animate__fadeInDown"> My Projects</span>
+        <h2 class="title_contact animate__animated animate__fadeInLeft">Projects</h2>
     </div>
+
+
+
     <div class="container_portfolio">
 
         <div class="videos mx-auto mb-5">
-            <div>
-                <iframe src="https://www.youtube.com/embed/qsEyGIToTTc?si=1_t7mJECb16zWxoE" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="flex justify-between">
-                    <a href="https://github.com/rodrigo24291/recetaslaravel" class="link"><i class="fab fa-github"></i>
-                        Github</a>
-
-                </div>
-            </div>
-            <div>
-                <iframe src="https://www.youtube.com/embed/EmIKGSHmiI0?si=9zCrugr_GI8MESXQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="flex justify-between ">
-
-                    <a href="https://github.com/rodrigo24291/coffe-app" class="link"><i class="fab fa-github"></i>
-                        Github</a>
-
-                </div>
-            </div>
-            <div>
-                <iframe src="https://www.youtube.com/embed/iE_EyZ32c0o?si=FQ_kuUVu96pyg0BZ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="flex justify-between">
-
-                    <a href="https://github.com/rodrigo24291/laravel-insta" class="link"><i class="fab fa-github"></i>
-                        Github</a>
-
-                </div>
-            </div>
-
-            <div class="about_image">
-                <div>
-                <img src="assets/abogadoscordoba.png" alt="">
-            </div>
-                <div class="flex justify-between web">
-
-                    <a href="https://abogadoscordobas.com/" class="link"><i class="fa-solid fa-globe"></i>Entrar al
-                        sitio</a>
-
-                </div>
-            </div>
-
-
-            <div class="about_image">
-                <div>
-                <img src="assets/appheroe.png" alt="">
-            </div>
-                <div class="flex justify-between web">
-
-                    <a href="https://rodrigo24291.github.io/heroe-app-react/" class="link"><i
+            
+            <p-card header="Laravel Photo" class=" animate__animated animate__fadeInUp" [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/laravelphoto.png" />
+                </ng-template>
+                <p>
+                    Aplicacion monolitica realizada en laravel que simula algunas funciones de instagram
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=iE_EyZ32c0o&t=50s" class="bt mb-2"><i
                             class="fa-solid fa-globe"></i>Entrar al sitio</a>
-                    <a href="https://github.com/rodrigo24291/heroe-app-react" class="link"><i class="fab fa-github"></i>
+                    <a href="https://github.com/rodrigo24291/laravel-insta" class="bt"><i class="fab fa-github"></i>
                         Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
+            <p-card header="Laravel Recetas" class=" animate__animated animate__fadeInUp" [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/laravelrecetas.png" />
+                </ng-template>
+                <p>
+                    Aplicacion monolitica realizada en laravel que simula un blog de recetas
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=qsEyGIToTTc&t=18s" class="mb-2 bt"><i
+                            class="fa-solid fa-globe"></i>Entrar al sitio</a>
+                    <a href="https://github.com/rodrigo24291/recetaslaravel" class="bt"><i class="fab fa-github"></i>
+                        Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
+
+            <p-card header="Laravel-Restaurant" class=" animate__animated animate__fadeInUp"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/laravelappventa.png" />
+                </ng-template>
+                <p>
+                    Aplicacion realizada en laravel y angular, mediante conexion rest-api.
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=EmIKGSHmiI0" class="bt mb-2"><i
+                            class="fa-solid fa-globe"></i>Entrar al sitio</a>
+                    <a href="https://github.com/rodrigo24291/coffe-app" class="bt"><i class="fab fa-github"></i>
+                        Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
 
-            <div class="about_image">
-                <div>
-                <img src="assets/blackjack.png" alt="">
-            </div>
-                <div class="flex justify-between web">
 
-                    <a href="https://rodrigo24291.github.io/" class="link"><i class="fa-solid fa-globe"></i>Entrar al
+            <p-card header="Heroe-App" class=" animate__animated animate__fadeInUp" [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/appheroe.png" />
+                </ng-template>
+                <p>
+                    Aplicacion de heroe realizada en react
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://rodrigo24291.github.io/heroe-app-react/" class="bt mb-2"><i
+                            class="fa-solid fa-globe"></i>Entrar al sitio</a>
+                    <a href="https://github.com/rodrigo24291/heroe-app-react" class="bt"><i class="fab fa-github"></i>
+                        Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
+
+
+            <p-card header="Blackjack-App"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/blackjack.png" />
+                </ng-template>
+                <p>
+Aplicacion realizada en js css y html
+                </p>
+                <ng-template pTemplate="footer">
+
+                    <div class="flex flex-col">
+                    <a href="https://rodrigo24291.github.io/" class="bt mb-2"><i class="fa-solid fa-globe"></i>Entrar al
                         sitio</a>
-                    <a href="https://github.com/rodrigo24291/rodrigo24291.github.io" class="link"><i
+                    <a href="https://github.com/rodrigo24291/rodrigo24291.github.io" class="bt"><i
                             class="fab fa-github"></i> Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
 
-
-            <div class="about_image">
-                <div>
-                <img src="assets/cortinascordoba.png" alt="">
-            </div>
-                <div class="flex justify-between web">
-
-                    <a href="https://cortinascordoba.ar/" class="link"><i class="fa-solid fa-globe"></i>Entrar al
+            <p-card header="Cortinas Cordoba" [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/cortinascordoba.png" />
+                </ng-template>
+                <p>
+                    Pagina web realizada en wordpress
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://cortinascordoba.ar/" class="bt "><i class="fa-solid fa-globe"></i>Entrar al
                         sitio</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
+            
+            <p-card header="Abogados Cordoba" [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/abogadoscordoba.png" />
+                </ng-template>
+                <p>
+                    Pagina web realizada en wordpress
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://cortinascordoba.ar/" class="bt "><i class="fa-solid fa-globe"></i>Entrar al
+                        sitio</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
 
-            <div class="about_image">
-                <div>
-                <img src="assets/ladingpage2.png" alt="">
-            </div>
-                <div class="flex justify-between web">
-
-                    <a href="https://rodrigo24291.github.io/portfolio2/" class="link"><i
+            <p-card header="Web"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/ladingpage2.png" />
+                </ng-template>
+                <p style="background-color: #250821;">
+                    Pagina web Realizada con html,css y js
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://rodrigo24291.github.io/portfolio2/" class="bt mb-2"><i
                             class="fa-solid fa-globe"></i>Entrar al sitio</a>
-                    <a href="https://github.com/rodrigo24291/portfolio2" class="link"><i class="fab fa-github"></i>
+                    <a href="https://github.com/rodrigo24291/portfolio2" class="bt"><i class="fab fa-github"></i>
                         Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
 
-            <div class="about_image">
-                <div>
-                <img src="assets/reparacioncortinas 1.png" alt="">
-            </div>
-                <div class="flex justify-between web">
 
-                    <a href="https://reparacioncortinasmetalicas.ar/" class="link"><i
+
+
+            <p-card header="Cortinas Oliveri"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/reparacioncortinas 1.png" />
+                </ng-template>
+                <p>
+                    Pagina web realizada con wordpress
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex flex-col">
+                    <a href="https://reparacioncortinasmetalicas.ar/" class="bt"><i
                             class="fa-solid fa-globe"></i>Entrar al sitio</a>
+</div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
 
-            <div class="about_image">
-                <div>
-                <img src="assets/cotizaseguro.png" alt="">
-            </div>
-                <div class="flex justify-between web">
 
-                    <a href="https://rodrigo24291.github.io/cotizar-seguro/" class="link"><i
+            <p-card header="Seguro React"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/cotizaseguro.png" />
+                </ng-template>
+                <p>
+                    App realizada con react
+                </p>
+                <ng-template pTemplate="footer">
+
+                    <div class="flex flex-col">
+                    <a href="https://rodrigo24291.github.io/cotizar-seguro/" class="bt mb-2"><i
                             class="fa-solid fa-globe"></i>Entrar al sitio</a>
-                    <a href="https://github.com/rodrigo24291/cotizar-seguro" class="link"><i class="fab fa-github"></i>
+                    <a href="https://github.com/rodrigo24291/cotizar-seguro" class="bt"><i class="fab fa-github"></i>
                         Github</a>
+                    </div>
+                </ng-template>
+            </p-card>
 
-                </div>
-            </div>
 
-            <div class="about_image">
-                <div class="content-image">
-                <img src="assets/gastossemanalreact.png" alt="">
-                </div>
-                <div class="flex justify-between web">
+            <p-card header="App Gasto"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/gastossemanalreact.png" />
+                </ng-template>
+                <p>
+                    App realizada en react
+                </p>
+                <ng-template pTemplate="footer">
 
-                    <a href="https://rodrigo24291.github.io/climareact/" class="link"><i
+<div class="flex flex-col">
+                    <a href="https://rodrigo24291.github.io/climareact/" class="bt mb-2"><i
                             class="fa-solid fa-globe"></i>Entrar al sitio</a>
-                    <a href="https://github.com/rodrigo24291/climareact" class="link"><i class="fab fa-github"></i>
+                    <a href="https://github.com/rodrigo24291/climareact" class="bt"><i class="fab fa-github"></i>
                         Github</a>
+                    </div>
 
-                </div>
-            </div>
+                </ng-template>
+            </p-card>
 
 
-            <div class="about_image">
-                <div class="content-image">
-                <img src="assets/climareact.png"  >
-            </div>
-                <div class="flex justify-between web">
 
-                    <a href="https://github.com/rodrigo24291/climareact" class="link"><i
-                            class="fa-solid fa-globe"></i>Entrar al sitio</a>
-                    <a href="https://github.com/rodrigo24291/app-clima-react-api" class="link"><i
-                            class="fab fa-github"></i> Github</a>
+            <p-card header="Clima React"  [style]="{ 'width': '100%', 'background-color': '#250821','color':'white'  }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/climareact.png" />
+                </ng-template>
+                <p>
+                    App realizda en react
+                </p>
+                <ng-template pTemplate="footer" class="flex flex-cols">
 
-                </div>
-            </div>
+
+                    <div class="flex flex-col mb-3" style="width: 100%;">
+                        <a href="https://github.com/rodrigo24291/climareact" class="bt"><i class="fa-solid fa-globe"></i>Entrar al sitio</a>
+                      </div>
+                      <div class="flex-col">
+                        <a href="https://github.com/rodrigo24291/app-clima-react-api" class="bt"><i class="fab fa-github"></i> Github</a>
+                      </div>
+                </ng-template>
+            </p-card>
+
 
         </div>
 
